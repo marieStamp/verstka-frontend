@@ -191,6 +191,25 @@ a {
   width: 32px;
   height: 29px;
   margin-right: 26px;
+  position: relative;
+}
+
+.header__cart img {
+  position: absolute;
+}
+
+.header__cart img.redCart {
+  opacity: 0;
+}
+
+.header__cart:hover img.redCart {
+
+  opacity: 1;
+}
+
+.header__cart:hover img.cart,
+.header__account img.cart:hover {
+  opacity: 0;
 }
 
 .header__account {
