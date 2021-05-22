@@ -15,14 +15,12 @@ a
     align-content: center
     justify-content: space-between
 
-
     &-right,
 
     &-left
         display: flex
         align-items: center
         height: inherit
-
 
     &__search
         display: flex
@@ -31,7 +29,6 @@ a
         border: 1px solid #e6e6e6
         border-radius: 3px 3px 3px 3px
         height: 38px
-
 
     &__search input
         height: inherit
@@ -49,7 +46,6 @@ a
         width: 279px
         padding-left: 18px
 
-
     &__search button
         width: 35px
         height: 40px
@@ -61,21 +57,20 @@ a
 .search__browse
     width: 87px
     height: 38px
-    display: flex
-    align-items: center
     background-color: #f6f6f6
-    justify-content: center
 
-
-    &-text
-        color: #222
-        margin-right: 8px
-        font-weight: 300
+.dropdown__summary
+    color: #222
+    font-weight: 300
 
 /*-----dropdown menu------------*/
 
 .dropdown__summary
     position: relative
+    height: 38px
+    display: flex
+    justify-content: space-around
+    align-items: center
 
 .dropdown__menu
     width: 262px
@@ -85,7 +80,6 @@ a
     position: absolute
     left: 200px
     border: 1px solid #e8e8e8
-
 
     &_list
         padding: 15px
@@ -125,17 +119,12 @@ a
     color: #4f4f4f
     transition-duration: 0.3s
 
-
     &:hover
         color: #f16d7f
         transition-duration: 0.3s
 
-.dropdown__summary
-    display: block
-
-
-    &:-webkit-details-marker
-        display: none
+.dropdown__summary:-webkit-details-marker
+    display: none
 
 .dropdown__menu .menu-item
     z-index: 1
@@ -188,14 +177,12 @@ a
     text-transform: uppercase
     transition-duration: 0.3s
 
-
     &:hover
         color: #f16d7f
         transition-duration: 0.3s
 
 .topNav>.menu-list>li:not(:last-child)
     margin-right: 48px
-
 
     &
         display: flex
@@ -205,7 +192,6 @@ a
 .menu-item
     position: relative
     transition-duration: 0.3s
-
 
     &:hover .mega__menu
         display: flex
@@ -221,7 +207,6 @@ a
     padding: 20px
     top: 24px
 
-
     &::before
         content: ""
         display: block
@@ -235,10 +220,8 @@ a
         border-left: 1px solid #e8e8e8
         border-top: 1px solid #e8e8e8
 
-
     &_column
         margin-right: 46px
-
 
     &_column:last-of-type
         margin-right: 0
@@ -267,7 +250,6 @@ a
     text-transform: capitalize
     transition-duration: 0.3s
 
-
     &:hover
         color: #f16d7f
         transition-duration: 0.3s
@@ -280,7 +262,6 @@ a
     display: flex
     justify-content: flex-end
     margin-top: 15px
-
 
     &Text
         width: 71px
@@ -322,7 +303,6 @@ a
     color: #222222
     text-decoration: none
 
-
     & span
         font-weight: 900
         font-family: Lato
@@ -346,8 +326,6 @@ a
     margin-right: 26px
     position: relative
 
-
-
 .header__account
     width: 130px
     height: 38px
@@ -356,22 +334,18 @@ a
     display: flex
     align-items: center
 
-
     &:hover
         background-color: #ffffff
         outline: 1px solid #f16d7f
         transition-duration: 0.3s
 
-
     &:hover .header__account-text
         color: #f16d7f
         transition-duration: 0.3s
 
-
     &:hover .fa-caret-down
         color: #f16d7f
         transition-duration: 0.3s
-
 
     &-text
         font-family: Lato
@@ -382,7 +356,6 @@ a
         color: #ffffff
         margin-left: 19px
         margin-right: 8px
-
 
     & .fa-caret-down
         font-family: FontAwesome
@@ -397,7 +370,6 @@ a
 .header-right__cart
     position: relative
     transition-duration: 0.3s
-
 
     &:hover .dropdown__cart
         display: block
@@ -414,7 +386,6 @@ a
     top: 40px
     left: -30px
 
-
     &::before
         content: ""
         display: block
@@ -428,7 +399,6 @@ a
         border-left: 1px solid #e8e8e8
         border-top: 1px solid #e8e8e8
 
-
     &_list
         display: flex
         justify-content: space-between
@@ -436,21 +406,17 @@ a
         padding-bottom: 16px
         padding-top: 16px
 
-
     &_list:first-child
         padding-top: 0
 
-
     &_item
         display: flex
-
 
     &_text
         display: flex
         justify-content: space-around
         flex-direction: column
         padding: 14px
-
 
     &_text figcaption
         font-family: Lato
@@ -475,7 +441,6 @@ a
     text-transform: uppercase
     color: #f16d7f
 
-
     & span
         font-size: 10px
 
@@ -486,7 +451,6 @@ a
 .fa-times-circle
     color: #c0c0c0
     transition-duration: 0.3s
-
 
     &:hover
         color: #f16d7f
@@ -524,14 +488,12 @@ a
     cursor: pointer
     transition-duration: 0.2s
 
-
     &s
         display: flex
         align-items: center
         flex-direction: column
         justify-content: space-around
         height: 130px
-
 
     &:hover
         color: #f16d7f

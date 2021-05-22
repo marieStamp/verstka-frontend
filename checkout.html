@@ -18,45 +18,41 @@
             </a>
 
             <form method="get" class="header__search">
-                <div class="search__browse">
-                    <span class="search__browse-text">Browse</span>
+                <details class="search__browse">
+                    <summary class="dropdown__summary">Browse<i class="fas fa-caret-down"></i></summary>
 
-                    <details class="dropdown__details">
-                        <summary class="dropdown__summary"><i class="fas fa-caret-down"></i></summary>
+                    <!---dropdowm menu--------->
 
-                        <!---dropdowm menu--------->
+                    <div class="dropdown__menu">
 
-                        <div class="dropdown__menu">
-
-                            <nav class="dropdown__menu_list">
-                                <h3 class="dropdown_heading">Women</h3>
-                                <a class="dropdown__menu_item" href="#">Dresses</a>
-                                <a class="dropdown__menu_item" href="#">Tops</a></li>
-                                <a class="dropdown__menu_item" href="#">Sweaters/Knits</a>
-                                <a class="dropdown__menu_item" href="#">Jackets/Coats</a>
-                                <a class="dropdown__menu_item" href="#">Blazers</a>
-                                <a class="dropdown__menu_item" href="#">Denim</a>
-                                <a class="dropdown__menu_item" href="#">Leggings/Pants</a>
-                                <a class="dropdown__menu_item" href="#">Skirts/Shorts</a>
-                                <a class="dropdown__menu_item" href="#">Accessories</a>
-                            </nav>
+                        <nav class="dropdown__menu_list">
+                            <h3 class="dropdown_heading">Women</h3>
+                            <a class="dropdown__menu_item" href="#">Dresses</a>
+                            <a class="dropdown__menu_item" href="#">Tops</a></li>
+                            <a class="dropdown__menu_item" href="#">Sweaters/Knits</a>
+                            <a class="dropdown__menu_item" href="#">Jackets/Coats</a>
+                            <a class="dropdown__menu_item" href="#">Blazers</a>
+                            <a class="dropdown__menu_item" href="#">Denim</a>
+                            <a class="dropdown__menu_item" href="#">Leggings/Pants</a>
+                            <a class="dropdown__menu_item" href="#">Skirts/Shorts</a>
+                            <a class="dropdown__menu_item" href="#">Accessories</a>
+                        </nav>
 
 
-                            <nav class="dropdown__menu_list">
-                                <h3 class="dropdown_heading">Men</h3>
-                                <a class="dropdown__menu_item" href="#">Tees/Tank tops</a>
-                                <a class="dropdown__menu_item" href="#">Shirts/Polos</a>
-                                <a class="dropdown__menu_item" href="#">Sweaters</a>
-                                <a class="dropdown__menu_item" href="#">Sweatshirts/Hoodies</a>
-                                <a class="dropdown__menu_item" href="#">Blazers</a>
-                                <a class="dropdown__menu_item" href="#">Jackets/vests</a>
-                            </nav>
-                        </div>
+                        <nav class="dropdown__menu_list">
+                            <h3 class="dropdown_heading">Men</h3>
+                            <a class="dropdown__menu_item" href="#">Tees/Tank tops</a>
+                            <a class="dropdown__menu_item" href="#">Shirts/Polos</a>
+                            <a class="dropdown__menu_item" href="#">Sweaters</a>
+                            <a class="dropdown__menu_item" href="#">Sweatshirts/Hoodies</a>
+                            <a class="dropdown__menu_item" href="#">Blazers</a>
+                            <a class="dropdown__menu_item" href="#">Jackets/vests</a>
+                        </nav>
+                    </div>
 
-                        <!--------------------->
-                    </details>
+                    <!--------------------->
 
-                </div>
+                </details>
                 <input type="text" name="search" placeholder="Search for Item..." class="header__input">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
@@ -75,7 +71,7 @@
                     <div class="dropdown__cart_list">
                         <figure class="dropdown__cart_item">
                             <div class="dropdown__cart_img">
-                                <img src="img/dropdown-cart1.png" alt="cartImg1">
+                                <a href="singlePage.html"><img src="img/dropdown-cart1.png" alt="cartImg1"></a>
                             </div>
                             <div class="dropdown__cart_text">
                                 <figcaption>Rebox Zane</figcaption>
@@ -96,7 +92,7 @@
                     <div class="dropdown__cart_list">
                         <figure class="dropdown__cart_item">
                             <div class="dropdown__cart_img">
-                                <img src="img/dropdown-cart2.png" alt="cartImg2">
+                                <a href="singlePage.html"><img src="img/dropdown-cart2.png" alt="cartImg2"></a>
                             </div>
                             <div class="dropdown__cart_text">
                                 <figcaption>Rebox Zane</figcaption>
@@ -119,7 +115,8 @@
                         <p class="total-cart">$500.00</p>
                     </div>
                     <div class="dropdown__cart_buttons">
-                        <button class="dropdown__cart_button" type="submit">Checkout</button>
+                        <a href="checkout.html"><button class="dropdown__cart_button"
+                                type="submit">Checkout</button></a>
                         <a class="dropdown__cart_button-link" href="shoppingCart.html">
                             <div class="dropdown__cart_button">Go to cart
                             </div>
