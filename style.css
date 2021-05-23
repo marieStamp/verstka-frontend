@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /* line 1, ../../OneDrive/Документы/prof verstka frontend/sass/_oftenProperties.sass */
-.mainTextStyle, .productDetails__description h2, .shoppingCart__function_clear, .shoppingCart__function_continue, .shoppingCart__registration h2, .shoppingCart__registration h2 span, .shoppingCart__registration h3, .regField, .submit, .checkout {
+.mainTextStyle, .productDetails__description h2, .shoppingCart__function_clear, .shoppingCart__function_continue, .shoppingCart__registration h2, .shoppingCart__registration h2 span, .shoppingCart__registration h3, .regField, .submit, .checkout, .product__offers_class h1, .checkout__info, .registration__checkin h2, .registration__checkin p, #loginButton, .registration__registered h2 {
   font-family: Lato;
   line-height: 1.2;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 /* line 1, ../../OneDrive/Документы/prof verstka frontend/sass/_oftenProperties.sass */
-.mainTextStyle, .productDetails__description h2, .shoppingCart__function_clear, .shoppingCart__function_continue, .shoppingCart__registration h2, .shoppingCart__registration h2 span, .shoppingCart__registration h3, .regField, .submit, .checkout {
+.mainTextStyle, .productDetails__description h2, .shoppingCart__function_clear, .shoppingCart__function_continue, .shoppingCart__registration h2, .shoppingCart__registration h2 span, .shoppingCart__registration h3, .regField, .submit, .checkout, .product__offers_class h1, .checkout__info, .registration__checkin h2, .registration__checkin p, #loginButton, .registration__registered h2 {
   font-family: Lato;
   line-height: 1.2;
 }
@@ -2490,7 +2490,7 @@ input.regField {
 
 /* line 1020, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .category_item a:hover {
-  color: #ef5b70;
+  color: #f16d7f;
   transition-duration: 0.3s;
 }
 
@@ -2499,7 +2499,7 @@ input.regField {
   display: flex;
   width: 215px;
   height: 37px;
-  border-left-color: #ef5b70;
+  border-left-color: #f16d7f;
   border-left-width: 5px;
   border-left-style: solid;
   border-bottom-color: #ebebeb;
@@ -2566,7 +2566,7 @@ input.regField {
 
 /* line 1080, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .features__trending_type a:hover {
-  color: #ef5b70;
+  color: #f16d7f;
   transition-duration: 0.3s;
 }
 
@@ -2767,7 +2767,7 @@ input.regField {
 
 /* line 1233, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .pagination_list .fa-angle-left:hover {
-  color: #ef5b70;
+  color: #f16d7f;
   transition-duration: 0.3s;
 }
 
@@ -2783,7 +2783,7 @@ input.regField {
 
 /* line 1245, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .pagination_list .fa-angle-right:hover {
-  color: #ef5b70;
+  color: #f16d7f;
   transition-duration: 0.3s;
 }
 
@@ -2799,7 +2799,7 @@ input.regField {
 
 /* line 1257, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .pagination_left li a:hover {
-  color: #ef5b70;
+  color: #f16d7f;
   transition-duration: 0.3s;
 }
 
@@ -2817,39 +2817,34 @@ input.regField {
   width: 150px;
   height: 44px;
   background-color: #ffffff;
-  border: 1px solid #ef5b70;
+  border: 1px solid #f16d7f;
   border-radius: 3px;
   font-family: Lato;
   font-size: 16px;
   line-height: 26px;
   font-weight: 300;
-  color: #ef5b70;
-  font-family: Lato;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 600;
-  color: #ef5b70;
+  color: #f16d7f;
   display: flex;
   justify-content: center;
   align-items: center;
   transition-duration: 0.3s;
 }
 
-/* line 1289, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1284, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .product__pagination_right:hover {
   background-color: #f16d7f;
   color: #ffffff;
   transition-duration: 0.3s;
 }
 
-/* line 1294, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1289, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .product__offers {
   width: 100%;
   height: 341px;
   background-color: #222224;
 }
 
-/* line 1299, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1294, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .product {
   display: flex;
   justify-content: space-between;
@@ -2857,18 +2852,16 @@ input.regField {
   padding-top: 90px;
 }
 
-/* line 1305, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1300, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .product__offers_class h1 {
-  font-family: Lato;
   font-size: 20px;
-  line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.025em;
   color: #fbfbfb;
   margin-bottom: 17px;
 }
 
-/* line 1314, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1308, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .product__offers_class p {
   font-family: Lato;
   font-size: 14px;
@@ -2879,7 +2872,7 @@ input.regField {
   width: 310px;
 }
 
-/* line 1323, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1317, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .product__offers_img {
   margin-bottom: 23px;
   width: 51px;
@@ -2887,41 +2880,41 @@ input.regField {
 }
 
 /*----------Checkout----------*/
-/* line 1330, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1324, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .checkout__info {
-  font-family: Lato;
   font-size: 16px;
-  line-height: 1.2;
   font-weight: 800;
   text-transform: uppercase;
   color: #222222;
   margin-top: 85px;
 }
 
-/* line 1339, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
-.registration {
-  display: flex;
+/* line 1332, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.regForm {
   margin-bottom: 85px;
+  margin-left: 25px;
 }
 
-/* line 1343, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1336, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.registration {
+  display: flex;
+}
+
+/* line 1339, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .registration__checkin {
-  margin-left: 25px;
   margin-right: 300px;
 }
 
-/* line 1347, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1342, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .registration__checkin h2 {
-  font-family: Lato;
   font-size: 13px;
-  line-height: 1.2;
   font-weight: 600;
   text-transform: uppercase;
   color: #222222;
   margin-top: 35px;
 }
 
-/* line 1356, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1350, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .registration__checkin h3 {
   font-family: Lato;
   font-size: 13px;
@@ -2929,118 +2922,95 @@ input.regField {
   font-weight: 400;
   color: #b3b2b2;
   margin-bottom: 30px;
+  margin-top: 15px;
 }
 
-/* line 1364, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1359, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .registration__checkin p {
-  font-family: Lato;
   font-size: 12px;
-  line-height: 1.2;
   font-weight: 600;
   text-transform: uppercase;
   color: #222222;
 }
 
-/* line 1372, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1366, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .registration__checkin h4 {
   font-family: Lato;
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
   color: #b3b2b2;
+  margin-bottom: 15px;
   transition-duration: 0.3s;
 }
 
-/* line 1380, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1375, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .registration__checkin h4:hover {
   color: #f16d7f;
   transition-duration: 0.3s;
 }
 
-/* line 1384, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1379, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 #loginButton {
   width: 180px;
   height: 50px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
-  font-family: Lato;
   font-size: 14px;
-  line-height: 1.2;
   font-weight: 800;
   text-transform: uppercase;
   color: #4a4a4a;
   cursor: pointer;
   transition-duration: 0.3s;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
-/* line 1399, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1393, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 #loginButton:hover {
   background-color: #f16d7f;
-  color: #fff;
+  color: #ffffff;
 }
 
-/* line 1403, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1397, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .registration__registered h2 {
-  font-family: Lato;
   font-size: 13px;
-  line-height: 1.2;
   font-weight: 600;
   text-transform: uppercase;
   color: #222222;
   margin-top: 35px;
 }
 
-/* line 1412, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1405, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .registration__registered h3 {
   font-family: Lato;
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
   color: #b3b2b2;
+  margin-top: 15px;
 }
 
-/* line 1419, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
-.registration__registered p {
-  font-family: Lato;
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: 600;
-  color: #222222;
-  margin-top: 24px;
-  margin-bottom: 15px;
-}
-
-/* line 1428, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
-.registration__registered span {
-  font-family: Lato;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #ff0d0d;
-}
-
-/* line 1435, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1413, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .registration__registered h1 {
   font-family: Lato;
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
   color: #ff0d0d;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
+  margin-top: 22px;
 }
 
-/* line 1443, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1422, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .registration__registered input {
   width: 390px;
   height: 45px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   font-size: 20px;
-  padding-left: 20px;
 }
 
-/* line 1451, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1429, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .forgotPass a {
   font-family: Lato;
   font-size: 14px;
@@ -3051,24 +3021,53 @@ input.regField {
   transition-duration: 0.3s;
 }
 
-/* line 1460, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1438, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .forgotPass a:hover {
   color: #f16d7f;
   transition-duration: 0.3s;
 }
 
-/* line 1464, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+/* line 1442, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.regHeader {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #222222;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* line 1452, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.regHeader span {
+  font-family: Lato;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ff0d0d;
+}
+
+/* line 1459, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.regInput {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+/* line 1467, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
 .checkout__line {
   width: 1140px;
   height: 1px;
   background-color: #e8e8e8;
 }
 
-/* line 1469, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
-.checkout__info2 {
-  font-family: Lato;
+/* line 1472, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.checkout__info {
   font-size: 16px;
-  line-height: 1.2;
   font-weight: 800;
   text-transform: uppercase;
   color: #222222;
@@ -3076,9 +3075,56 @@ input.regField {
   margin-bottom: 20px;
 }
 
-/* line 1479, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
-.checkout__line:last-child {
-  margin-bottom: 90px;
+/* line 1481, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.checkout__info::-webkit-details-marker {
+  display: none;
+}
+
+/* line 1484, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.checkout__info {
+  display: block;
+}
+
+/* line 1487, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.checkout__data {
+  margin-top: 85px;
+  margin-bottom: 93px;
+}
+
+/* line 1491, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.regInput_number {
+  -moz-appearance: textfield;
+}
+
+/* line 1494, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.regInput_number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+/* line 1497, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.regInput_number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* line 1500, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.regCheck {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #222222;
+}
+
+/* line 1507, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.regCheck input {
+  margin-right: 14px;
+}
+
+/* line 1510, ../../OneDrive/Документы/prof verstka frontend/sass/style.sass */
+.shipping__choice {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
