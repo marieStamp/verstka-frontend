@@ -660,13 +660,14 @@ body
     display: flex
     justify-content: space-between
     margin-bottom: 73px
-    transition-duration: 0.2s
+    transition-duration: $transitionDuration
 
 .photo__like
     width: 263px
     height: 280px
     background-color: #e9e9e9
     text-align: center
+    transition-duration: $transitionDuration
 
 .product__like-name
     font-family: Lato
@@ -687,10 +688,14 @@ body
 
 .product__like:hover
     box-shadow: 0 0 15px #a4a4a4
-    transition-duration: 0.3s
+    transition-duration: $transitionDuration
+
+.item:hover .photo__like
+    filter: brightness(50%)
+    transition-duration: $transitionDuration
 
 .product__like
-    transition-duration: 0.3s
+    transition-duration: $transitionDuration
 
     & a
         display: block
