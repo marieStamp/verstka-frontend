@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Single page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/61f160a9f8.js" crossorigin="anonymous"></script>
 </head>
@@ -471,147 +472,199 @@
     </div>
 
 
-    <div class="singlePage__photo">
-        <div class="singlePage__photo_angle">
-            <a class="singlePage__photo_link" href="#">
-                <i class="fas fa-angle-left"></i>
-            </a>
-        </div>
-        <div class="singlePage__photo_img">
-            <img src="img/singlePage_girl.png" alt="singlePage_girl">
-        </div>
-        <div class="singlePage__photo_angle">
-            <a class="singlePage__photo_link" href="#">
-                <i class="fas fa-angle-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <div class="women container">
-        <main>
-            <div class="womenCollection">
-                <div class="womenCollection__inf">
-                    <h2>WOMEN COLLECTION</h2>
-                    <div class="women__greyline_short"></div>
-                    <div class="women__redline"></div>
-                    <article>
-                        <h1>Moschino Cheap And Chic</h1>
-                        <p class="womenCollection__inf_text">Compellingly actualize fully researched processes before
-                            proactive outsourcing. Progressively
-                            syndicate collaborative architectures before cutting-edge services. Completely visualize
-                            parallel core competencies rather than exceptional portals.</p>
-                    </article>
-                    <div class="description_h2">
-                        <p>MATERIAL:<span> COTTON</span></p>
-                        <p>DESIGNER:<span> BINBURHAN</span></p>
-                    </div>
-                    <p class="womenCollection_cost">$561</p>
-                    <div class="women__line_long"></div>
-                    <div class="chooseAndAdd">
-                        <div class="choose">
-                            <p>CHOOSE COLOR</p>
-                            <p>CHOOSE SIZE</p>
-                            <p class="quantityP">QUANTITY</p>
-                        </div>
-                        <form action="#" method="post">
-                            <select class="productColor">
-                                <option class="colorRed">Red</option>
-                                <option class="colorBlue">Blue</option>
-                                <option class="colorGreen">Green</option>
-                            </select>
-                            <select class="productSize">
-                                <option>XXL</option>
-                                <option>XL</option>
-                                <option>L</option>
-                                <option>M</option>
-                                <option>S</option>
-                            </select>
-                            <input class="productQuantity" type="number">
-                            <button class="womenCollection__button">
-                                <img class="whiteCart" src="img/whiteCart.svg" alt="whiteCart">
-                                <img class="redCart" src="img/redCart.svg" alt="redCart">Add to
-                                Cart</button>
+    <main>
+        <div class="container checkout__data">
+            <details class="checkout__details">
+                <summary class="checkout__info">01. Shipping Adress</summary>
+                <div class="registration">
+                    <div class="registration__checkin">
+                        <form class="regForm" action="#">
+                            <h2>Check as a guest or register</h2>
+                            <h3>Register with us for future convenience</h3>
+                            <p class="regCheck"><input name="check-register" type="radio" value="checkGuest"> checkout
+                                as guest</p><br>
+                            <p class="regCheck"><input name="check-register" type="radio" value="register" checked>
+                                register</p>
+                            <h2>register and save time!</h2>
+                            <h3>Register with us for future convenience</h3>
+                            <a href="checkout.html">
+                                <h4><i class="fas fa-angle-double-right"></i>&nbsp;Fast and easy checkout</h4>
+                            </a>
+                            <a href="#">
+                                <h4><i class="fas fa-angle-double-right"></i>&nbsp;Easy access to your order history and
+                                    status</h4>
+                            </a>
+                            <input type="submit" value="Continue" id="loginButton">
                         </form>
                     </div>
-
+                    <div class="registration__registered">
+                        <form action="#">
+                            <h2>Already registed?</h2>
+                            <h3>Please log in below</h3>
+                            <p class="regHeader">EMAIL ADDRESS<span>*</span></p>
+                            <input required class="regInput" type="email" name="mail">
+                            <p class="regHeader">PASSWORD<span>*</span></p>
+                            <input required class="regInput" type="password" name="pass">
+                            <h1><span>*</span>Required Fileds</h1>
+                            <input type="submit" value="Log in" id="loginButton"><span class="forgotPass"><a
+                                    href="#">Forgot
+                                    Password ?</a></span>
+                        </form>
+                    </div>
                 </div>
-                <h1 class="singlePage__like">you may like also</h1>
-                <section>
-                    <div class="product__like_list">
-                        <div class="item">
-                            <a class="item-link" href="singlePage.html">
-                                <div class="photo__like">
-                                    <img src="img/singlePage1.png" alt="singlePage photo1">
-                                </div>
-                                <div class="item__info">
-                                    <p class="item__info_name">BLAZE LEGGINGS</p>
-                                    <p class="item__info_price">$52.00</p>
-                                </div>
-                            </a>
-                            <div class="addCart">
-                                <a class="addCart-link" href="#">
-                                    <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                                    <p class="addCart_text">Add to Cart</p>
-                                </a>
-                            </div>
+            </details>
+            <div class="checkout__line"></div>
+            <details class="checkout__details">
+                <summary class="checkout__info">
+                    02. BILLING INFORMATION</summary>
+                <form class="regForm">
+                    <p class="regHeader">
+                        First Name<span>*</span>
+                    </p>
+                    <input required class="regInput" type="text">
+                    <p class="regHeader">
+                        Last Name<span>*</span>
+                    </p>
+                    <input required class="regInput" type="text">
+                    <p class="regHeader">
+                        Address<span>*</span>
+                    </p>
+                    <input required class="regInput" type="text">
+                    <p class="regHeader">
+                        City
+                    </p>
+                    <input class="regInput" type="text">
+                    <p class="regHeader">
+                        ZIP Code<span>*</span>
+                    </p>
+                    <input required class="regInput regInput_number" type="number"><br>
+                    <input type="submit" value="Continue" id="loginButton">
+                </form>
+            </details>
+            <div class="checkout__line">
+            </div>
+            <details class="checkout__details">
+                <summary class="checkout__info">03. SHIPPING INFORMATION</summary>
+                <form class="regForm">
+                    <p class="regHeader">
+                        First Name<span>*</span>
+                    </p>
+                    <input required class="regInput" type="text">
+                    <p class="regHeader">
+                        Last Name<span>*</span>
+                    </p>
+                    <input required class="regInput" type="text">
+                    <p class="regHeader">
+                        Address<span>*</span>
+                    </p>
+                    <input required class="regInput" type="text">
+                    <p class="regHeader">
+                        City
+                    </p>
+                    <input class="regInput" type="text">
+                    <p class="regHeader">
+                        ZIP Code<span>*</span>
+                    </p>
+                    <input required class="regInput regInput_number" type="number"><br>
+                    <input type="submit" value="Continue" id="loginButton">
+                </form>
+            </details>
+            <div class="checkout__line"></div>
+            <details class="checkout__details">
+                <summary class="checkout__info">04. SHIPPING METHOD</summary>
+                <form class="regForm" action="#">
+                    <div class="shipping__choice">
+                        <div>
+                            <p class="regCheck"><input name="check-register" type="radio" checked>Seller's shipping
+                                method
+                            </p><br>
+                            <p class="regCheck"><input name="check-register" type="radio">China Air Male
+                            </p><br>
+                            <p class="regCheck"><input name="check-register" type="radio">EMS
+                            </p><br>
+                            <p class="regCheck"><input name="check-register" type="radio">DHL
+                            </p>
                         </div>
-                        <div class="item">
-                            <a class="item-link" href="singlePage.html">
-                                <div class="photo__like">
-                                    <img src="img/singlePage2.png" alt="singlePage photo2">
-                                </div>
-                                <div class="item__info">
-                                    <p class="item__info_name">BLAZE LEGGINGS</p>
-                                    <p class="item__info_price">$52.00</p>
-                                </div>
-                            </a>
-                            <div class="addCart">
-                                <a class="addCart-link" href="#">
-                                    <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                                    <p class="addCart_text">Add to Cart</p>
-                                </a>
-                            </div>
+                        <div>
+                            <p class="regCheck">35-60 days</p><br>
+                            <p class="regCheck">15-35 days</p><br>
+                            <p class="regCheck">4-6 days</p><br>
+                            <p class="regCheck">3-6 days</p>
                         </div>
-                        <div class="item">
-                            <a class="item-link" href="singlePage.html">
-                                <div class="photo__like">
-                                    <img src="img/singlePage3.png" alt="singlePage photo3">
-                                </div>
-                                <div class="item__info">
-                                    <p class="item__info_name">BLAZE LEGGINGS</p>
-                                    <p class="item__info_price">$52.00</p>
-                                </div>
-                            </a>
-                            <div class="addCart">
-                                <a class="addCart-link" href="#">
-                                    <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                                    <p class="addCart_text">Add to Cart</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a class="item-link" href="singlePage.html">
-                                <div class="photo__like">
-                                    <img src="img/singlePage4.png" alt="singlePage photo4">
-                                </div>
-                                <div class="item__info">
-                                    <p class="item__info_name">BLAZE LEGGINGS</p>
-                                    <p class="item__info_price">$52.00</p>
-                                </div>
-                            </a>
-                            <div class="addCart">
-                                <a class="addCart-link" href="#">
-                                    <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                                    <p class="addCart_text">Add to Cart</p>
-                                </a>
-                            </div>
+                        <div>
+                            <p class="regCheck">Free shipping</p><br>
+                            <p class="regCheck">US $8</p><br>
+                            <p class="regCheck">US $22</p><br>
+                            <p class="regCheck">US $30</p>
                         </div>
                     </div>
-                </section>
-            </div>
-        </main>
-    </div>
-
+                    <input type="submit" value="Continue" id="loginButton">
+                </form>
+            </details>
+            <div class="checkout__line"></div>
+            <details class="checkout__details">
+                <summary class="checkout__info">05. PAYMENT METHOD</summary>
+                <form class="regForm" action="#">
+                    <p class="regCheck"><input name="check-register" type="radio" checked> Visa/MasterCard</p><br>
+                    <p class="regCheck"><input name="check-register" type="radio"> WebMoney</p><br>
+                    <p class="regCheck"><input name="check-register" type="radio"> PayPal</p><br>
+                    <p class="regCheck"><input name="check-register" type="radio"> Bank transfer</p>
+                    <input type="submit" value="Continue" id="loginButton">
+                </form>
+            </details>
+            <div class="checkout__line"></div>
+            <details class="checkout__details">
+                <summary class="checkout__info">06. ORDER REVIEW</summary>
+                <div class="dropdown__cart_list">
+                    <figure class="dropdown__cart_item">
+                        <div class="dropdown__cart_img">
+                            <a href="singlePage.html"><img src="img/dropdown-cart1.png" alt="cartImg1"></a>
+                        </div>
+                        <div class="dropdown__cart_text">
+                            <figcaption>Rebox Zane</figcaption>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="item-cart__price">1 &nbsp <span> x </span>&nbsp $250</p>
+                        </div>
+                    </figure>
+                    <div class="dropdown__cart_action">
+                        <a href="#"><i class="fas fa-times-circle" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="dropdown__cart_list">
+                    <figure class="dropdown__cart_item">
+                        <div class="dropdown__cart_img">
+                            <a href="singlePage.html"><img src="img/dropdown-cart2.png" alt="cartImg2"></a>
+                        </div>
+                        <div class="dropdown__cart_text">
+                            <figcaption>Rebox Zane</figcaption>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="item-cart__price">1 &nbsp <span> x </span>&nbsp $250</p>
+                        </div>
+                    </figure>
+                    <div class="dropdown__cart_action">
+                        <a href="#"><i class="fas fa-times-circle" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="dropdown__cart_total">
+                    <p class="total-cart">TOTAL</p>
+                    <p class="total-cart">$500.00</p>
+                </div>
+            </details>
+            <div class="checkout__line"></div>
+        </div>
+    </main>
 
 
     <footer class="footer">
