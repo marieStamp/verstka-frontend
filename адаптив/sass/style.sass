@@ -4,10 +4,13 @@
     margin: 0
     padding: 0
 
+html,
 body
+    min-height: 100vh
     width: 100%
-    margin: 0
-    padding: 0
+
+.content
+    padding: 0 2% 0 2%
 
 .container
     width: 1140px
@@ -111,7 +114,7 @@ body
     height: 764px
     display: flex
     align-items: center
-    margin-bottom: 65px
+    margin-bottom: 8%
 
 .slider-brand
     background-image: url(../img/sliderPhoto.png)
@@ -121,6 +124,7 @@ body
     min-height: 764px
     align-items: center
     background-color: #F1E4E6
+    justify-content: flex-end
 
 .red-line
     margin-right: 12px
@@ -131,7 +135,7 @@ body
     display: flex
     text-transform: uppercase
     line-height: 13px
-    margin-left: 670px
+    //margin-left: 670px
     width: 450px
 
 .slider-text__right
@@ -161,7 +165,7 @@ body
     flex-wrap: wrap
     justify-content: space-between
 
-.hotDeal a
+.hotDeal-link
     display: flex
     transition-duration: 0.2s
 
@@ -191,6 +195,10 @@ body
     align-items: center
     justify-content: center
     margin-bottom: 6%
+    width: 100%
+
+    & img
+        width: 100%
 
 .featuredItems
     margin-bottom: 3%
@@ -312,13 +320,14 @@ body
     height: 47px
     background-color: $mainColor
     display: flex
-    justify-content: center
     margin: auto
     transition-duration: $transDur
 
     & a
         display: flex
         text-decoration: none
+        width: 100%
+        justify-content: center
 
     &:hover
         background-color: #ffffff
@@ -342,15 +351,16 @@ body
 
 .product-offers
     width: 100%
-    height: 341px
+    min-height: 341px
     background-color: #222224
 
 .product
     display: flex
     justify-content: space-between
     text-align: center
-    padding-top: 90px
     background-color: #222222
+    align-items: center
+    min-height: 341px
 
 .product-offersClass h1
     font-family: lato
@@ -375,7 +385,6 @@ body
     height: 44px
 
 .customer
-    width: 100%
     height: 438px
     background-image: url(../img/customerBack.png)
     background-size: cover
@@ -530,6 +539,9 @@ body
     //margin-left: 7px
     transition-duration: 0.3s
 
+    & a
+        display: block
+
 .fa-facebook-f
     @extend .socialsFeatures
 
@@ -561,3 +573,235 @@ body
 .socials-icon:hover .fa-twitter
     color: #ffffff
     transition-duration: $transDur
+
+@media screen and (max-width: 1024px)
+
+    .customer,
+    .browseBlock,
+    .featuredItems,
+    .slider
+        width: 1140px
+
+    .header-left
+        padding-left: 2%
+
+    .header-right
+        padding-right: 2%
+
+@media screen and (max-width: 768px)
+
+    .item
+        width: 49%
+
+    .product
+        display: flex
+        text-align: center
+        background-color: #222222
+        flex-direction: column
+        min-height: 610px
+        align-items: center
+        justify-content: space-around
+
+    .customer-info
+        display: flex
+        justify-content: space-around
+        height: 100%
+        flex-direction: column
+        align-items: center
+
+    .subscribe
+        margin-right: 0
+
+    .customer,
+    .browseBlock,
+    .featuredItems,
+    .slider
+        width: 1140px
+
+    .slider-brand
+        margin-left: 8%
+
+    .slider-text
+        margin-right: 2%
+        width: 50%
+
+    .brand-text
+        font-size: 70px
+
+    .luxFashion
+        font-size: 40px
+
+@media screen and (max-width: 375px)
+
+    .header-link__none
+        display: none
+
+    .header-right
+        width: 32px
+
+    .slider-brand
+        background-image: none
+        justify-content: center
+
+    .slider-text
+        width: 80%
+
+    .red-line
+        width: 18px
+
+    .brand-text
+        font-size: 120px
+        line-height: 110px
+
+    .luxFashion
+        font-size: 67px
+        line-height: 60px
+
+    .slider
+        margin-bottom: 40%
+        height: 1000px
+
+    .hotDeal-link
+        width: 100%
+
+    .hotDeal
+        display: block
+        margin-bottom: 20%
+
+    .hotDeal-img
+        height: 110%
+        margin-top: 3%
+
+    .hotDeal-text
+        font-size: 45px
+
+        & span
+            font-size: 65px
+            line-height: 90px
+
+    .item
+        width: 100%
+
+    .product-offersClass
+        width: 80%
+
+        & h1
+            font-size: 45px
+
+        & p
+            font-size: 30px
+            line-height: 40px
+            width: 100%
+
+    .product-offers_img
+        width: 10%
+        height: 20%
+
+    .product
+        min-height: 1200px
+
+    .featuredItems
+        margin-bottom: 30%
+
+        &-head
+            font-size: 80px
+
+        &-text
+            font-size: 50px
+            line-height: 90px
+
+    .item-info_name
+        font-size: 40px
+
+    .item-info_descr
+        font-size: 40px
+        line-height: 50px
+
+    .item-info_price
+        font-size: 38px
+
+    .browseProducts
+        width: 50%
+        height: 100px
+
+        &-text
+            font-size: 40px
+
+    .browseBlock
+        margin-top: 30%
+        margin-bottom: 70%
+
+    .customer
+        min-height: 1200px
+
+    .feedback-content
+        width: 80%
+
+    .feedback-img
+        width: 30%
+
+        & img
+            width: 80%
+
+    .feedback-textDescription
+        font-size: 55px
+        line-height: 60px
+
+    .subscribe
+        width: 80%
+
+        &-text
+            width: 100%
+            margin-bottom: 10%
+
+        &-upper
+            font-size: 60px
+            line-height: 54px
+
+        &-lower
+            font-size: 40px
+            line-height: 50px
+
+        &-field
+            width: 100%
+            margin-bottom: 30%
+
+    .sub-mail
+        font-size: 40px
+        width: 70%
+        height: 100px
+        border-radius: 40px 0px 0px 40px
+
+    .subscribe-fieldButton
+        font-size: 40px
+        width: 30%
+        height: 100px
+        border-radius: 0px 40px 40px 0px
+
+    .footer-copy
+        height: 300px
+
+    .copy
+        flex-direction: column-reverse
+        justify-content: space-around
+
+        &-rights
+            font-size: 50px
+
+        &-socials
+            width: 35%
+
+    .socials-icon a
+        height: 100%
+
+    .socials-icon i
+        font-size: 50px
+        margin-top: 15%
+
+    .socials-icon
+        width: 20%
+        height: 80px
+
+    .copy_socials_list
+        display: flex
+        justify-content: space-between

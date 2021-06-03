@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Главная страница</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/61f160a9f8.js" crossorigin="anonymous"></script>
@@ -11,6 +12,10 @@
 <body>
     <header class="header">
         <div class="header-main container">
+
+
+
+
             <div class="header-left">
                 <a class="header-link" href="index.html">
                     <img class="logo" src="img/logo.svg" alt="logo">
@@ -49,14 +54,15 @@
                         </nav>
                     </div>
                 </div>
-                <a class="header-link" href="#">
+                <a class="header-link header-link__none" href="#">
                     <img src="img/login.svg" alt="login">
                 </a>
-                <a class="header-link" href="#">
+                <a class="header-link header-link__none" href="#">
                     <img src="img/cart.svg" alt="cart">
                 </a>
             </div>
-        </div>
+
+
     </header>
 
     <div class="slider">
@@ -72,30 +78,30 @@
     </div>
     <section>
         <div class="hotDeal container">
-            <a href="#">
+            <a class="hotDeal-link" href="#">
                 <div class="hotDeal-item">
                     <img src="img/hotDeal1.png">
                     <div class="hotDeal-text">30% OFF<br><span>FOR WOMEN</span>
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a class="hotDeal-link" href="#">
                 <div class="hotDeal-item">
                     <img src="img/hotDeal2.png">
                     <div class="hotDeal-text">HOT DEAL<br><span>FOR MEN</span>
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a class="hotDeal-link" href="#">
                 <div class="hotDeal-item">
                     <img src="img/hotDeal3.png">
                     <div class="hotDeal-text">NEW ARRIVALS<br><span>FOR KIDS</span>
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a class="hotDeal-link" href="#">
                 <div class="hotDeal-item">
-                    <img src="img/hotDeal4.png">
+                    <img class="hotDeal-img" src="img/hotDeal4.png">
                     <div class="hotDeal-text">LUXIROUS & TRENDY<br><span>ACCESORIES</span>
                     </div>
                 </div>
@@ -212,12 +218,13 @@
                 </div>
             </div>
         </div>
+        <div class="browseBlock">
+            <div class="browseProducts">
+                <a href="#">
+                    <p class="browseProducts-text">Browse All Products</p>
+                </a>
 
-        <div class="browseProducts">
-            <a href="#">
-                <p class="browseProducts-text">Browse All Products</p>
-            </a>
-
+            </div>
         </div>
     </section>
 
