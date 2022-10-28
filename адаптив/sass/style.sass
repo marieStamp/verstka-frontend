@@ -33,22 +33,28 @@ body
         display: flex
 
     &-right
-        width: 170px
         display: flex
         justify-content: space-between
+        &-img
+            height: 60px
+            cursor: pointer
+            align-self: center
+        &-img
+            margin-right: 15px
 
 .logo
     margin-right: 41px
     transition: 0.2s
+    width: 70px
 
     &:hover
         transform: scale(1.2)
 
+.searchImg
+    width: 55px
+
 .menu
     display: flex
-
-    &-img
-        cursor: pointer
 
     &:hover .dropdown-menu
         display: flex
@@ -529,14 +535,16 @@ body
         font-size: 16px
         line-height: 19px
         color: #FBFBFB
+        padding-left: 2%
+
+    &-socials
+        padding-right: 2%
 
 .socials-icon
     width: 32px
     height: 32px
     background-color: #ffffff
     text-align: center
-    //margin-top: 10px
-    //margin-left: 7px
     transition-duration: 0.3s
 
     & a
@@ -633,11 +641,14 @@ body
 
 @media screen and (max-width: 375px)
 
+    .header
+        width: 1140px
+
+    .header-main
+        width: 100%
+
     .header-link__none
         display: none
-
-    .header-right
-        width: 32px
 
     .slider-brand
         background-image: none
@@ -805,3 +816,9 @@ body
     .copy_socials_list
         display: flex
         justify-content: space-between
+
+    // .customer,
+    // .browseBlock,
+    // .featuredItems,
+    // .slider
+    //     width: 1140px
