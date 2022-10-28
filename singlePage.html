@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница</title>
+    <title>Single page</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/61f160a9f8.js" crossorigin="anonymous"></script>
 </head>
@@ -455,237 +455,164 @@
     </nav>
 
 
-    <div class="slider">
-        <div class="slider__brand container">
-            <div class="slider-text">
-                <div class="red-line"></div>
-                <div class="slider-text__right">
-                    <p class="brand-text">the brand</p>
-                    <p class="luxFashion">of luxerious <span>fashion</span></p>
-                </div>
+    <div class="breadcrump">
+        <div class="breadC container">
+            <div class="breadcrumpH1">
+                New Arrivals
             </div>
+            <nav>
+                <ul class="breadcrump__nav">
+                    <li class="breadcrump__nav_item"><a href="index.html">Home /</a></li>
+                    <li class="breadcrump__nav_item"><a href="#">Men /</a></li>
+                    <li class="breadcrump__nav_item"><a href="#">New Arrivals</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 
+
+    <div class="singlePage__photo">
+        <div class="singlePage__photo_angle">
+            <a class="singlePage__photo_link" href="#">
+                <i class="fas fa-angle-left"></i>
+            </a>
+        </div>
+        <div class="singlePage__photo_img">
+            <img src="img/singlePage_girl.png" alt="singlePage_girl">
+        </div>
+        <div class="singlePage__photo_angle">
+            <a class="singlePage__photo_link" href="#">
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </div>
     </div>
 
-    <section class="container category">
-        <div class="category__left">
-            <a href="#">
-                <div class="category__men">
-                    <div class="deal-text">
-                        <p class="upperText">HOT DEAL</p>
-                        <p class="lowerText">FOR MEN</p>
+    <div class="women container">
+        <main>
+            <div class="womenCollection">
+                <div class="womenCollection__inf">
+                    <h2>WOMEN COLLECTION</h2>
+                    <div class="women__greyline_short"></div>
+                    <div class="women__redline"></div>
+                    <article>
+                        <h1>Moschino Cheap And Chic</h1>
+                        <p class="womenCollection__inf_text">Compellingly actualize fully researched processes before
+                            proactive outsourcing. Progressively
+                            syndicate collaborative architectures before cutting-edge services. Completely visualize
+                            parallel core competencies rather than exceptional portals.</p>
+                    </article>
+                    <div class="description_h2">
+                        <p>MATERIAL:<span> COTTON</span></p>
+                        <p>DESIGNER:<span> BINBURHAN</span></p>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="category__accessories">
-                    <div class="deal-text">
-                        <p class="upperText">LUXIROUS & trendy</p>
-                        <p class="lowerText">ACCESORIES</p>
+                    <p class="womenCollection_cost">$561</p>
+                    <div class="women__line_long"></div>
+                    <div class="chooseAndAdd">
+                        <div class="choose">
+                            <p>CHOOSE COLOR</p>
+                            <p>CHOOSE SIZE</p>
+                            <p class="quantityP">QUANTITY</p>
+                        </div>
+                        <form action="#" method="post">
+                            <select class="productColor">
+                                <option class="colorRed">Red</option>
+                                <option class="colorBlue">Blue</option>
+                                <option class="colorGreen">Green</option>
+                            </select>
+                            <select class="productSize">
+                                <option>XXL</option>
+                                <option>XL</option>
+                                <option>L</option>
+                                <option>M</option>
+                                <option>S</option>
+                            </select>
+                            <input class="productQuantity" type="number">
+                            <button class="womenCollection__button">
+                                <img class="whiteCart" src="img/whiteCart.svg" alt="whiteCart">
+                                <img class="redCart" src="img/redCart.svg" alt="redCart">Add to
+                                Cart</button>
+                        </form>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="category__right">
-            <a href="#">
-                <div class="category__women">
-                    <div class="deal-text">
-                        <p class="upperText">30% offer</p>
-                        <p class="lowerText">women</p>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="category__kids">
-                    <div class="deal-text">
-                        <p class="upperText">new arrivals</p>
-                        <p class="lowerText">FOR kids</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-    <section>
-        <div class="featuredItems">
-            <h1 class="featuredItems__head">Featured Items</h1>
-            <p class="featuredItems__text">Shop for items based on what we featured in this week</p>
-        </div>
-        <div class="container catalogue">
-            <div class="item">
-                <a class="item-link" href="singlePage.html">
-                    <img class="item__photo" src="img/item1.png" alt="item1">
-                    <div class="item__info">
-                        <p class="item__info_name">Mango People T-shirt</p>
-                        <p class="item__info_price">$52.00</p>
-                    </div>
-                </a>
-                <div class="addCart">
-                    <a class="addCart-link" href="#">
-                        <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                        <p class="addCart_text">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a class="item-link" href="singlePage.html">
-                    <img class="item__photo" src="img/item2.png" alt="item1">
-                    <div class="item__info">
-                        <p class="item__info_name">Mango People T-shirt</p>
-                        <p class="item__info_price">$52.00</p>
-                    </div>
-                </a>
-                <div class="addCart">
-                    <a class="addCart-link" href="#">
-                        <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                        <p class="addCart_text">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a class="item-link" href="singlePage.html">
-                    <img class="item__photo" src="img/item3.png" alt="item1">
-                    <div class="item__info">
-                        <p class="item__info_name">Mango People T-shirt</p>
-                        <p class="item__info_price">$52.00</p>
-                    </div>
-                </a>
-                <div class="addCart">
-                    <a class="addCart-link" href="#">
-                        <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                        <p class="addCart_text">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a class="item-link" href="singlePage.html">
-                    <img class="item__photo" src="img/item4.png" alt="item1">
-                    <div class="item__info">
-                        <p class="item__info_name">Mango People T-shirt</p>
-                        <p class="item__info_price">$52.00</p>
-                    </div>
-                </a>
-                <div class="addCart">
-                    <a class="addCart-link" href="#">
-                        <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                        <p class="addCart_text">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a class="item-link" href="singlePage.html">
-                    <img class="item__photo" src="img/item5.png" alt="item1">
-                    <div class="item__info">
-                        <p class="item__info_name">Mango People T-shirt</p>
-                        <p class="item__info_price">$52.00</p>
-                    </div>
-                </a>
-                <div class="addCart">
-                    <a class="addCart-link" href="#">
-                        <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                        <p class="addCart_text">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a class="item-link" href="singlePage.html">
-                    <img class="item__photo" src="img/item6.png" alt="item1">
-                    <div class="item__info">
-                        <p class="item__info_name">Mango People T-shirt</p>
-                        <p class="item__info_price">$52.00</p>
-                    </div>
-                </a>
-                <div class="addCart">
-                    <a class="addCart-link" href="#">
-                        <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                        <p class="addCart_text">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a class="item-link" href="singlePage.html">
-                    <img class="item__photo" src="img/item7.png" alt="item1">
-                    <div class="item__info">
-                        <p class="item__info_name">Mango People T-shirt</p>
-                        <p class="item__info_price">$52.00</p>
-                    </div>
-                </a>
-                <div class="addCart">
-                    <a class="addCart-link" href="#">
-                        <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                        <p class="addCart_text">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a class="item-link" href="singlePage.html">
-                    <img class="item__photo" src="img/item8.png" alt="item1">
-                    <div class="item__info">
-                        <p class="item__info_name">Mango People T-shirt</p>
-                        <p class="item__info_price">$52.00</p>
-                    </div>
-                </a>
-                <div class="addCart">
-                    <a class="addCart-link" href="#">
-                        <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
-                        <p class="addCart_text">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="browseProducts">
-        <a href="product.html">
-            <p class="browseProducts__text">Browse All Products</p>
-            <i class="fas fa-long-arrow-alt-right"></i>
-        </a>
 
+                </div>
+                <h1 class="singlePage__like">you may like also</h1>
+                <section>
+                    <div class="product__like_list">
+                        <div class="item">
+                            <a class="item-link" href="singlePage.html">
+                                <div class="photo__like">
+                                    <img src="img/singlePage1.png" alt="singlePage photo1">
+                                </div>
+                                <div class="item__info">
+                                    <p class="item__info_name">BLAZE LEGGINGS</p>
+                                    <p class="item__info_price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="addCart">
+                                <a class="addCart-link" href="#">
+                                    <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
+                                    <p class="addCart_text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="singlePage.html">
+                                <div class="photo__like">
+                                    <img src="img/singlePage2.png" alt="singlePage photo2">
+                                </div>
+                                <div class="item__info">
+                                    <p class="item__info_name">BLAZE LEGGINGS</p>
+                                    <p class="item__info_price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="addCart">
+                                <a class="addCart-link" href="#">
+                                    <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
+                                    <p class="addCart_text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="singlePage.html">
+                                <div class="photo__like">
+                                    <img src="img/singlePage3.png" alt="singlePage photo3">
+                                </div>
+                                <div class="item__info">
+                                    <p class="item__info_name">BLAZE LEGGINGS</p>
+                                    <p class="item__info_price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="addCart">
+                                <a class="addCart-link" href="#">
+                                    <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
+                                    <p class="addCart_text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="singlePage.html">
+                                <div class="photo__like">
+                                    <img src="img/singlePage4.png" alt="singlePage photo4">
+                                </div>
+                                <div class="item__info">
+                                    <p class="item__info_name">BLAZE LEGGINGS</p>
+                                    <p class="item__info_price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="addCart">
+                                <a class="addCart-link" href="#">
+                                    <img class="item-cart" src="img/whiteCart.svg" alt="itemCart">
+                                    <p class="addCart_text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
     </div>
 
-    <div class="container womenOffer">
-        <div class="womenOffer__left">
-            <div class="womenOffer__left_text">
-                <p class="upperOffer">30%<span>offer</span></p>
-                <p class="lowerOffer">FOR WOMEN</p>
-            </div>
-        </div>
-        <div class="womenOffer__right">
 
-            <div class="womenOffer__right_block">
-                <div class="womenOffer__right_img">
-                    <img class="car" src="img/car.svg" alt="car">
-                </div>
-                <article class="womenOffer__right_text">
-                    <h3>Free Delivery</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.</p>
-                </article>
-            </div>
-
-            <div class="womenOffer__right_block">
-                <div class="womenOffer__right_img">
-                    <img class="percent" src="img/percent.svg" alt="percent">
-                </div>
-                <article class="womenOffer__right_text">
-                    <h3>Sales & discounts</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.</p>
-                </article>
-            </div>
-
-            <div class="womenOffer__right_block">
-                <div class="womenOffer__right_img">
-                    <img class="crown" src="img/crown.svg" alt="crown">
-                </div>
-                <article class="womenOffer__right_text">
-                    <h3>Quality assurance</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.</p>
-                </article>
-            </div>
-        </div>
-    </div>
 
     <footer class="footer">
         <div class="customer">

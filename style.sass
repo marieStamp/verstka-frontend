@@ -1,0 +1,1518 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap")
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap")
+
+@import "var"
+
+@import "oftenProperties"
+*
+    margin: 0
+    padding: 0
+
+body
+    width: 100%
+    margin: 0
+    padding: 0
+    color: #222222
+    font-family: "Lato", sans-serif
+    font-weight: 300
+
+@import "header"
+
+.text-description
+    display: flex
+    overflow: hidden
+
+.slider
+    background-color: #e8e8e8
+    width: 100%
+    height: 614px
+    margin-bottom: 98px
+
+    &__brand
+        height: 614px
+        background-image: url(img/slider.png)
+        background-position: right
+        background-repeat: no-repeat
+        display: flex
+        align-items: center
+
+.red-line
+    margin-right: 12px
+    width: 12px
+    background-color: #f16d7f
+
+.slider-text
+    display: flex
+    text-transform: uppercase
+    line-height: 13px
+
+    &__right
+        display: block
+
+.brand-text
+    font-family: Lato
+    font-size: 60px
+    line-height: 1.2
+    font-weight: 900
+    letter-spacing: 0.025em
+    color: #222222
+
+.luxFashion
+    font-family: Lato
+    font-size: 40px
+    line-height: 1.2
+    font-weight: 900
+    letter-spacing: 0.025em
+    color: #222222
+
+    & span
+        font-family: Lato
+        font-size: 40px
+        line-height: 1.2
+        font-weight: 900
+        letter-spacing: 0.025em
+        color: #f16d7f
+
+.category__men
+    background-image: url(img/banner1.png)
+    width: 560px
+    height: 542px
+
+.category__accessories
+    background-image: url(img/banner2.png)
+    width: 560px
+    height: 261px
+
+.category__women
+    background-image: url(img/banner3.png)
+    width: 560px
+    height: 261px
+
+.category__kids
+    background-image: url(img/banner4.png)
+    width: 560px
+    height: 542px
+
+.category
+    height: 823px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    &__left
+        display: flex
+        flex-direction: column
+        height: 823px
+        justify-content: space-between
+
+    &__right
+        display: flex
+        flex-direction: column
+        height: 823px
+        justify-content: space-between
+
+    & a
+        display: flex
+
+    & a:hover
+        filter: drop-shadow(2px 4px 6px black)
+        transition-duration: 0.2s
+
+.upperText
+    font-family: Lato
+    font-size: 18px
+    line-height: 1.2
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: 0.025em
+    color: #222222
+
+.lowerText
+    font-family: Lato
+    font-size: 30px
+    line-height: 1.2
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: 0.025em
+    color: #f16d7f
+
+.deal-text
+    background-color: #ffffff
+    margin-top: 25px
+    padding: 16px 20px
+    float: left
+
+.featuredItems
+    margin-top: 100px
+    margin-bottom: 60px
+    text-align: center
+    height: 51px
+
+    &__head
+        font-family: Lato
+        font-size: 30px
+        line-height: 54px
+        font-weight: 700
+        letter-spacing: 0.025em
+        color: #222222
+        margin: 0
+        line-height: 20px
+
+    &__text
+        font-family: Lato
+        font-size: 14px
+        line-height: 54px
+        font-weight: 400
+        letter-spacing: 0.025em
+        color: #9f9f9f
+
+.item__info
+    padding: 15px
+
+    &_name
+        font-family: Lato
+        font-size: 13px
+        line-height: 1.2
+        font-weight: 600
+        text-transform: uppercase
+        color: #222222
+        margin-bottom: 15px
+
+    &_price
+        font-family: Lato
+        font-size: 16px
+        line-height: 1.2
+        font-weight: 700
+        text-transform: uppercase
+        color: #f16d7f
+
+.catalogue
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 25px
+
+.item
+    width: 263px
+    margin-bottom: 40px
+    position: relative
+    transition-duration: 0.3s
+
+    &:hover
+        box-shadow: 0 0 15px #a4a4a4
+        transition-duration: 0.3s
+
+    &-link
+        display: block
+        width: 263px
+        text-decoration: none
+
+    &__photo
+        width: 100%
+        transition-duration: 0.3s
+
+    &:hover .item__photo
+        filter: brightness(50%)
+        transition-duration: 0.3s
+
+.addCart
+    display: none
+    justify-content: center
+    width: 100%
+    position: absolute
+    transition-duration: 0.3s
+    top: 98px
+
+    .item:hover &
+        display: flex
+        transition-duration: 0.3s
+
+    &-link
+        display: flex
+        align-items: center
+        padding: 8px
+        border: 1px solid #ffffff
+        text-decoration: none
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+        transition-duration: 0.3s
+
+    &-link:hover
+        box-shadow: 0 0 10px #ffffff
+        transition-duration: 0.3s
+
+.item-cart
+    width: 23px
+    height: 22px
+    color: #ffffff
+    margin-right: 10px
+
+.addCart_text
+    font-family: Lato
+    font-size: 13px
+    line-height: 1.2
+    font-weight: 700
+    color: #ffffff
+
+.browseProducts
+    width: 212px
+    height: 48px
+    background-color: #f16d7f
+    display: flex
+    justify-content: center
+    margin: auto
+    transition-duration: 0.3s
+
+    & a
+        display: flex
+
+    &:hover
+        background-color: #ffffff
+        outline: 1px solid #f16d7f
+        transition-duration: 0.3s
+
+    &:hover .browseProducts__text
+        color: #f16d7f
+        transition-duration: 0.3s
+
+    &:hover .fa-long-arrow-alt-right
+        color: #f16d7f
+        transition-duration: 0.3s
+
+    &__text
+        font-family: Lato
+        font-size: 16px
+        line-height: 54px
+        font-weight: 700
+        letter-spacing: 0.025em
+        color: #ffffff
+        align-self: center
+
+.fa-long-arrow-alt-right
+    font-family: FontAwesome
+    font-size: 15px
+    line-height: 54px
+    font-weight: 400
+    letter-spacing: 0.025em
+    color: #ffffff
+    margin-left: 10px
+    align-self: center
+
+.womenOffer
+    display: flex
+    margin-top: 113px
+    margin-bottom: 97px
+
+    &__left
+        width: 767px
+        height: 529px
+        background-image: url(img/womenOffer.png)
+        background-blend-mode: darken
+        background-color: #9b9da2
+
+    &__right
+        width: 373px
+        height: 529px
+        background-color: #020305
+
+    &__left_text
+        width: 293px
+        height: 78px
+        margin-top: 146px
+        margin-left: 39px
+
+.upperOffer
+    font-family: Lato
+    font-size: 53.7px
+    line-height: 1.2
+    font-weight: 700
+    letter-spacing: 0.025em
+    color: #ffffff
+
+    & span
+        font-family: Lato
+        font-size: 53.7px
+        line-height: 1.2
+        font-weight: 700
+        letter-spacing: 0.025em
+        color: #f16d7f
+        margin-left: 20px
+        text-transform: uppercase
+
+.lowerOffer
+    font-family: Lato
+    font-size: 32.2px
+    line-height: 1.2
+    font-weight: 700
+    letter-spacing: 0.025em
+    color: #ffffff
+
+.upperOffer_right
+    font-family: Lato
+    font-size: 20px
+    line-height: 1.2
+    font-weight: 700
+    letter-spacing: 0.025em
+    color: #fbfbfb
+
+.lowerOffer_right
+    font-family: Lato
+    font-size: 14px
+    line-height: 24px
+    font-weight: 300
+    letter-spacing: 0.025em
+    color: #fbfbfb
+    width: 219px
+    height: 58px
+
+.womenOffer__right
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 529px
+
+    &_block
+        display: flex
+        justify-content: space-around
+
+    &_text
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 219px
+
+    &_text h3
+        font-family: Lato
+        font-size: 20px
+        line-height: 1.2
+        font-weight: 700
+        letter-spacing: 0.025em
+        color: #fbfbfb
+        padding-bottom: 10px
+
+    &_text p
+        font-family: Lato
+        font-size: 14px
+        line-height: 24px
+        font-weight: 300
+        letter-spacing: 0.025em
+        color: #fbfbfb
+
+@import "footer"
+
+@import "navigation"
+
+/*---------Single Page----------*/
+
+.singlePage__photo
+    background-color: #f7f7f7
+    display: flex
+    justify-content: space-between
+
+    &_link
+        display: flex
+        height: 47px
+        width: 47px
+        align-items: center
+        justify-content: center
+
+    &_angle
+        width: 47px
+        height: 47px
+        background-color: rgba(42, 42, 42, 0.14)
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 365px
+        transition-duration: 0.3s
+
+    &_angle:hover
+        background-color: grey
+        transition-duration: 0.3s
+
+    &_angle a
+        width: 47px
+        height: 47px
+
+.fa-angle-left
+    font-family: FontAwesome
+    font-size: 24px
+    line-height: 24px
+    font-weight: 400
+    color: #ffffff
+
+.fa-angle-right
+    font-family: FontAwesome
+    font-size: 24px
+    line-height: 24px
+    font-weight: 400
+    color: #ffffff
+
+.women
+    height: 1300px
+    margin-bottom: 79px
+
+    &Collection
+        margin: 0 auto
+        height: 730px
+        width: 1140px
+        background-color: #ffffff
+        border: 1px solid #eaeaea
+        position: relative
+        margin-top: -50px
+
+    &Collection__inf
+        width: 620px
+        text-align: center
+        margin: 0 auto
+        margin-top: 73px
+
+    &Collection__inf h2
+        font-family: Lato
+        font-size: 14px
+        line-height: 24px
+        font-weight: 700
+        color: #f16d7f
+
+    &__greyline_short
+        width: 147px
+        height: 0.3px
+        background-color: #eaeaea
+        border: 0.3px solid #eaeaea
+        margin-left: 235px
+        position: absolute
+
+    &__redline
+        width: 63px
+        height: 3px
+        background-color: #ef5b70
+        margin-left: 280px
+        position: relative
+
+    &Collection__inf h1
+        font-family: Lato
+        font-size: 18px
+        line-height: 24px
+        font-weight: 900
+        text-transform: uppercase
+        color: #4d4d4d
+        margin-top: 50px
+
+    &Collection__inf_text
+        font-family: Lato
+        font-size: 14px
+        line-height: 24px
+        font-weight: 300
+        color: #5e5e5e
+        margin-top: 67px
+        margin-bottom: 28px
+
+.description_h2
+    font-family: Lato
+    font-size: 14px
+    line-height: 24px
+    font-weight: 700
+    color: #b9b9b9
+    display: flex
+    justify-content: space-around
+
+    & span
+        font-family: Lato
+        font-size: 14px
+        line-height: 24px
+        font-weight: 700
+        color: #2f2f2f
+
+.womenCollection__inf .womenCollection_cost
+    font-family: Lato
+    font-size: 24px
+    line-height: 24px
+    font-weight: 700
+    color: #ef5b70
+    margin-top: 20px
+    margin-bottom: 43px
+
+.women__line_long
+    width: 642px
+    height: 0.5px
+    background-color: #eaeaea
+    border: 0.5px solid #eaeaea
+
+.colorRed
+    background: url(img/singlePage_red.png) no-repeat
+    background-size: 12px
+    background-position: 0 1px
+
+.chooseAndAdd
+    width: 537px
+    margin: 0 auto
+
+.choose
+    display: flex
+
+    margin-top: 63px
+    margin-bottom: 15px
+
+    & p
+        font-family: Lato
+        font-size: 14px
+        line-height: 24px
+        font-weight: 700
+        color: #2f2f2f
+        margin-right: 80px
+
+.quantityP
+    margin-left: 20px
+
+.womenCollection__inf form
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.productColor
+    width: 144px
+    height: 35px
+    background-color: #ffffff
+    border: 1px solid #eaeaea
+    padding-left: 15px
+
+.productSize
+    width: 144px
+    height: 35px
+    background-color: #ffffff
+    border: 1px solid #eaeaea
+    padding-left: 15px
+
+.productQuantity
+    width: 144px
+    height: 35px
+    background-color: #ffffff
+    border: 1px solid #eaeaea
+    padding-left: 15px
+
+    &::-webkit-inner-spin-button
+        -webkit-appearance: none
+
+/*стилизация стрелки*/
+.productColor::-ms-expand
+    color: #eaeaea
+
+.productSize::-ms-expand
+    color: #eaeaea
+
+.womenCollection__button
+    width: 537px
+    height: 55px
+    background-color: #ef5b70
+    margin-top: 28px
+    font-family: Lato
+    font-size: 16px
+    line-height: 1.2
+    font-weight: 700
+    color: #ffffff
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    transition-duration: 0.3s
+    border: none
+
+    & img
+        margin-right: 140px
+
+.whiteCart
+    z-index: 2
+    transition-duration: 0.3s
+
+.redCart
+    z-index: 1
+    transition-duration: 0.3s
+
+.womenCollection__button:hover .whiteCart
+    z-index: 1
+    transition-duration: 0.3s
+
+    .womenCollection__button:hover &
+        z-index: 2
+        transition-duration: 0.3s
+
+.womenCollection__button img
+    position: absolute
+
+.womenCollection__button:hover
+    background-color: #ffffff
+    color: #ef5b70
+    border: 1px solid #ef5b70
+    transition-duration: 0.3s
+
+.singlePage__like
+    font-family: Lato
+    font-size: 24px
+    line-height: 20px
+    font-weight: 900
+    text-transform: uppercase
+    color: #4d4d4d
+    text-align: center
+    margin-top: 219px
+    margin-bottom: 72px
+
+.product__like_list
+    display: flex
+    justify-content: space-between
+    margin-bottom: 73px
+    transition-duration: $transitionDuration
+
+.photo__like
+    width: 263px
+    height: 280px
+    background-color: #e9e9e9
+    text-align: center
+    transition-duration: $transitionDuration
+
+.product__like-name
+    font-family: Lato
+    font-size: 14px
+    line-height: 1.2
+    font-weight: 400
+    text-transform: uppercase
+    color: #6f6e6e
+
+.product__like-price
+    font-family: Lato
+    font-size: 16px
+    line-height: 1.2
+    font-weight: 700
+    text-transform: uppercase
+    color: #f16d7f
+    margin-top: 15px
+
+.product__like:hover
+    box-shadow: 0 0 15px #a4a4a4
+    transition-duration: $transitionDuration
+
+.item:hover .photo__like
+    filter: brightness(50%)
+    transition-duration: $transitionDuration
+
+.product__like
+    transition-duration: $transitionDuration
+
+    & a
+        display: block
+
+    &_description
+        padding: 15px
+
+    /*----------Shopping Cart-----------*/
+
+.productsCart
+    margin-top: 90px
+    margin-bottom: 80px
+
+.productLine
+    display: flex
+    justify-content: space-between
+
+.productDetails
+    display: flex
+    width: 300px
+
+.productFeatures_header
+    font-family: Lato
+    font-size: 13px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: -0.015em
+    color: #222222
+
+.productFeatures
+    font-family: Lato
+    font-size: 13px
+    line-height: 20px
+    font-weight: 400
+    color: #656565
+
+.productDetails__description h2
+    @extend .mainTextStyle
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    color: #222222
+
+.productDetails__description p
+    font-family: Lato
+    font-size: 13px
+    line-height: 20px
+    font-weight: 400
+    color: #575757
+
+.productDetails__description span
+    font-family: Lato
+    font-size: 13px
+    line-height: 20px
+    font-weight: 300
+    color: #6f6e6e
+    margin-left: 5px
+
+.shoppingCart-line
+    margin-bottom: 20px
+    margin-top: 20px
+    border-bottom: 1px solid #eaeaea
+
+.productDetails__photo
+    margin-right: 10px
+    height: 115px
+    transition-duration: $transitionDuration
+
+    &:hover
+        box-shadow: 0 0 15px #a4a4a4
+        transition-duration: $transitionDuration
+
+    & a
+        display: block
+
+.unitPrice
+    width: 150px
+    text-align: center
+
+.quantity
+    width: 150px
+    text-align: center
+
+    &
+        width: 150px
+        text-align: center
+
+.subtotal
+    width: 150px
+    text-align: center
+
+.action
+    width: 150px
+    text-align: center
+
+.quantity input
+    width: 30px
+    text-align: center
+    width: 54px
+    height: 30px
+    background-color: $mainColorWhite
+    border: 1px solid #eaeaea
+
+    &:focus
+        outline: #c0c0c0
+
+    &::-webkit-inner-spin-button
+        -webkit-appearance: none
+
+.productFeatures
+    margin-top: 40px
+
+.fa-times-circle
+    font-family: FontAwesome
+    font-size: 16px
+    line-height: 1.2
+    font-weight: 400
+    text-transform: uppercase
+    color: #c0c0c0
+    transition-duration: $transitionDuration
+
+    &:hover
+        color: $mainColorRed
+        transition-duration: $transitionDuration
+
+.shoppingCart__function
+    display: flex
+    justify-content: space-between
+
+    &_clear
+        @extend .mainTextStyle
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        color: #4a4a4a
+        cursor: pointer
+        transition-duration: $transitionDuration
+
+    & input
+        width: 235px
+        height: 50px
+        background-color: $mainColorWhite
+        border: 1px solid #eaeaea
+
+    &_continue
+        @extend .mainTextStyle
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        color: #4a4a4a
+        cursor: pointer
+        transition-duration: $transitionDuration
+
+    & button
+        width: 225px
+        height: 50px
+        background-color: $mainColorWhite
+        border: 1px solid #eaeaea
+
+    &_clear:hover
+        @extend .secondButtonHover
+
+    &_continue:hover
+        @extend .secondButtonHover
+
+.shippingAddress
+    width: 337px
+
+.shoppingCart__registration
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+
+    & h2
+        @extend .mainTextStyle
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        color: #222222
+
+    & h2 span
+        @extend .mainTextStyle
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        color: $mainColorRed
+
+    & h3
+        @extend .mainTextStyle
+        font-size: 14px
+        font-weight: 300
+        color: #000000
+
+.shippingAddress select
+    width: 355px
+    height: 45px
+
+.regField
+    width: 337px !important
+    @extend .mainTextStyle
+    font-size: 13px
+    font-weight: 300
+    color: #b1b1b1
+    text-transform: capitalize
+    margin-top: 20px
+
+    &:focus
+        color: black
+
+.selectCountry
+    color: black
+
+.shippingAddress .regField
+    width: 337px
+    height: 45px
+    background-color: $mainColorWhite
+    border: 1px solid #eaeaea
+    padding-left: 18px
+
+.couponDiscount
+    width: 337px
+
+.grandTotal
+    width: 360px
+    height: 214px
+    background-color: #f5f3f3
+    text-align: right
+
+    & a
+        display: flex
+
+.selectCountry.regField
+    width: 355px
+
+.regField__country
+    width: 355px !important
+
+input.regField
+    width: 337px
+    padding: 0
+
+.shippingAddress input::-webkit-inner-spin-button
+    -webkit-appearance: none
+
+.submit
+    width: 100px
+    height: 35px
+    margin-top: 20px
+    background-color: $mainColorWhite
+    border: 1px solid #eaeaea
+    @extend .mainTextStyle
+    font-size: 11px
+    font-weight: 900
+    text-transform: uppercase
+    color: #4a4a4a
+    cursor: pointer
+    transition-duration: $transitionDuration
+
+    &:hover
+        @extend .secondButtonHover
+
+.couponDiscount .regField
+    width: 337px
+    height: 45px
+    border: 1px solid #eaeaea
+    padding-left: 18px
+
+.couponDiscount h3
+    margin-top: 35px
+
+.checkout
+    width: 273px
+    height: 50px
+    background-color: $mainColorRed
+    @extend .mainTextStyle
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    color: $mainColorWhite
+    margin-left: 45px
+    display: flex
+    justify-content: center
+    align-items: center
+    transition-duration: $transitionDuration
+    border: transparent
+
+    &:hover
+        @extend .mainButtonHover
+
+.grandTotal__line
+    width: 275px
+    height: 1px
+    background-color: #e2e2e2
+    margin-bottom: 17px
+    margin-left: 45px
+
+.grandTotal h3
+    margin-top: 35px
+    margin-right: 40px
+
+.grandTotal h2
+    margin-right: 40px
+    margin-top: 14px
+    margin-bottom: 22px
+
+/*----------Product----------*/
+
+.products
+    display: flex
+    margin-top: 59px
+
+.fa-caret-up
+    cursor: pointer
+
+.category__list
+    list-style-type: none
+
+.category_item a
+    font-family: $mainFont
+    font-size: 14px
+    line-height: 33px
+    font-weight: 400
+    color: #6f6e6e
+    transition-duration: $transitionDuration
+
+    &:hover
+        color: $mainColorRed
+        transition-duration: $transitionDuration
+
+.product__category_lower
+    display: flex
+    width: 215px
+    height: 37px
+    border-left-color: $mainColorRed
+    border-left-width: 5px
+    border-left-style: solid
+    border-bottom-color: #ebebeb
+    border-bottom-width: 1px
+    border-bottom-style: solid
+    padding-left: 15px
+    font-family: Lato
+    font-size: 14px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    color: #6f6e6e
+    align-items: center
+    margin-bottom: 18px
+    justify-content: space-between
+
+    &:hover
+        color: $mainColorRed
+
+.fa-caret-down
+    cursor: pointer
+
+.features__trending h3
+    font-family: $mainFont
+    font-size: 14px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    color: #6f6e6e
+
+.features__trending_type
+    width: 176px
+    height: 39px
+    display: flex
+    flex-wrap: wrap
+
+    & a
+        font-family: $mainFont
+        font-size: 14px
+        line-height: 26px
+        font-weight: 400
+        color: #6f6e6e
+        transition-duration: $transitionDuration
+
+    & span
+        font-family: $mainFont
+        font-size: 14px
+        line-height: 26px
+        font-weight: 400
+        color: #dfdfdf
+
+    & a:hover
+        color: $mainColorRed
+        transition-duration: $transitionDuration
+
+.products__list_features
+    display: flex
+    justify-content: space-between
+    width: 846px
+
+.features_sizebox
+    display: flex
+    flex-wrap: wrap
+    width: 220px
+
+    & input
+        margin-left: 20px
+        margin-right: 7px
+        margin-top: 5px
+        font-family: OpenSans
+        font-size: 14px
+        line-height: 20px
+        font-weight: 400
+        text-transform: uppercase
+        color: #6f6e6e
+
+    & input:first-child
+        margin-left: 0
+
+    & input:nth-child(5)
+        margin-left: 0
+
+.features_size h3
+    font-family: $mainFont
+    font-size: 14px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    color: #6f6e6e
+
+.features_price h3
+    font-family: $mainFont
+    font-size: 14px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    color: #6f6e6e
+
+.numberRange
+    width: 262px
+    display: flex
+    justify-content: space-between
+
+.features_price input
+    width: 262px
+
+.products__list
+    width: 846px
+    margin-left: 56px
+
+.sorting
+    width: 846px
+    height: 50px
+    background-color: #f3f3f3
+    margin-top: 40px
+    margin-bottom: 48px
+    display: flex
+    align-items: center
+
+.sort_details
+    width: 85px
+
+.sort
+    width: 153px
+    height: 30px
+    background-color: $mainColorWhite
+    border: 1px solid #ebebeb
+    display: flex
+    margin-left: 10px
+    align-items: center
+
+.sort__summary
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+.sort__summary::marker
+    color: transparent
+
+.show
+    width: 119px
+    height: 30px
+    background-color: $mainColorWhite
+    border: 1px solid #ebebeb
+    display: flex
+    margin-left: 10px
+    align-items: center
+
+.sort__sortBy
+    border-right: 1px solid #ebebeb
+    font-family: $mainFont
+    font-size: 14px
+    line-height: 26px
+    font-weight: 400
+    color: #6f6e6e
+    width: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.sort__name
+    font-family: $mainFont
+    font-size: 14px
+    line-height: 26px
+    font-weight: 400
+    color: #6f6e6e
+    text-align: center
+    width: 95px
+    height: 30px
+
+    & .fa-caret-down
+        margin-left: 25px
+
+.product__pagination_left
+    width: 261px
+    height: 44px
+    background-color: $mainColorWhite
+    border: 1px solid #ebebeb
+    border-radius: 3px
+    display: flex
+    justify-content: center
+
+.product__pagination
+    display: flex
+    justify-content: space-between
+    margin-bottom: 110px
+
+.pagination_left
+    display: flex
+    list-style-type: none
+    width: 215px
+    height: 13px
+    padding: 0
+    justify-content: space-between
+    margin-top: 10px
+
+.pagination_list .fa-angle-left
+    font-family: FontAwesome
+    font-size: 20px
+    line-height: 26px
+    font-weight: 400
+    color: #aaaaaa
+    transition-duration: $transitionDuration
+
+    &:hover
+        color: $mainColorRed
+        transition-duration: $transitionDuration
+
+.pagination_list .fa-angle-right
+    font-family: FontAwesome
+    font-size: 20px
+    line-height: 26px
+    font-weight: 400
+    color: #aaaaaa
+    transition-duration: $transitionDuration
+
+    &:hover
+        color: $mainColorRed
+        transition-duration: $transitionDuration
+
+.pagination_left li a
+    font-family: $mainFont
+    font-size: 16px
+    line-height: 26px
+    font-weight: 600
+    color: #c4c4c4
+    transition-duration: $transitionDuration
+
+    &:hover
+        color: $mainColorRed
+        transition-duration: $transitionDuration
+
+.pagination_left li
+    font-family: $mainFont
+    font-size: 16px
+    line-height: 26px
+    font-weight: 300
+    color: #c4c4c4
+
+.product__pagination_right
+    width: 150px
+    height: 44px
+    background-color: $mainColorWhite
+    border: 1px solid $mainColorRed
+    border-radius: 3px
+    font-family: $mainFont
+    font-size: 16px
+    line-height: 26px
+    font-weight: 300
+    color: $mainColorRed
+    display: flex
+    justify-content: center
+    align-items: center
+    transition-duration: $transitionDuration
+
+    &:hover
+        background-color: $mainColorRed
+        color: $mainColorWhite
+        transition-duration: $transitionDuration
+
+.product__offers
+    width: 100%
+    height: 341px
+    background-color: #222224
+
+.product
+    display: flex
+    justify-content: space-between
+    text-align: center
+    padding-top: 90px
+
+    &__offers_class h1
+        @extend .mainTextStyle
+        font-size: 20px
+        font-weight: 700
+        letter-spacing: 0.025em
+        color: #fbfbfb
+        margin-bottom: 17px
+
+    &__offers_class p
+        font-family: $mainFont
+        font-size: 14px
+        line-height: 23px
+        font-weight: 300
+        letter-spacing: 0.025em
+        color: #fbfbfb
+        width: 310px
+
+.product__offers_img
+    margin-bottom: 23px
+    width: 51px
+    height: 44px
+
+/*----------Checkout----------*/
+
+.checkout__info
+    @extend .mainTextStyle
+    font-size: 16px
+    font-weight: 800
+    text-transform: uppercase
+    color: #222222
+    margin-top: 85px
+
+.regForm
+    margin-bottom: 85px
+    margin-left: 25px
+
+.registration
+    display: flex
+
+    &__checkin
+        margin-right: 300px
+
+    &__checkin h2
+        @extend .mainTextStyle
+        font-size: 13px
+        font-weight: 600
+        text-transform: uppercase
+        color: #222222
+        margin-top: 35px
+
+    &__checkin h3
+        font-family: $mainFont
+        font-size: 13px
+        line-height: 20px
+        font-weight: 400
+        color: #b3b2b2
+        margin-bottom: 30px
+        margin-top: 15px
+
+    &__checkin p
+        @extend .mainTextStyle
+        font-size: 12px
+        font-weight: 600
+        text-transform: uppercase
+        color: #222222
+
+    &__checkin h4
+        font-family: $mainFont
+        font-size: 13px
+        line-height: 20px
+        font-weight: 400
+        color: #b3b2b2
+        margin-bottom: 15px
+        transition-duration: $transitionDuration
+
+    &__checkin h4:hover
+        color: $mainColorRed
+        transition-duration: $transitionDuration
+
+#loginButton
+    width: 180px
+    height: 50px
+    background-color: $mainColorWhite
+    border: 1px solid #eaeaea
+    @extend .mainTextStyle
+    font-size: 14px
+    font-weight: 800
+    text-transform: uppercase
+    color: #4a4a4a
+    cursor: pointer
+    transition-duration: $transitionDuration
+    margin-top: 25px
+
+    &:hover
+        background-color: $mainColorRed
+        color: $mainColorWhite
+
+.registration__registered h2
+    @extend .mainTextStyle
+    font-size: 13px
+    font-weight: 600
+    text-transform: uppercase
+    color: #222222
+    margin-top: 35px
+
+.registration__registered h3
+    font-family: $mainFont
+    font-size: 13px
+    line-height: 20px
+    font-weight: 400
+    color: #b3b2b2
+    margin-top: 15px
+
+.registration__registered h1
+    font-family: $mainFont
+    font-size: 13px
+    line-height: 20px
+    font-weight: 400
+    color: #ff0d0d
+    margin-bottom: 7px
+    margin-top: 22px
+
+.registration__registered input
+    width: 390px
+    height: 45px
+    background-color: $mainColorWhite
+    border: 1px solid #eaeaea
+    font-size: 20px
+
+.forgotPass a
+    font-family: $mainFont
+    font-size: 14px
+    line-height: 20px
+    font-weight: 600
+    color: #222222
+    margin-left: 32px
+    transition-duration: $transitionDuration
+
+    &:hover
+        color: $mainColorRed
+        transition-duration: $transitionDuration
+
+.regHeader
+    font-family: $mainFont
+    font-size: 12px
+    line-height: 20px
+    font-weight: 600
+    color: #222222
+    margin-top: 20px
+    margin-bottom: 15px
+    text-transform: uppercase
+
+.regHeader span
+    font-family: $mainFont
+    font-size: 17px
+    line-height: 20px
+    font-weight: 400
+    color: #ff0d0d
+
+.regInput
+    width: 390px
+    height: 45px
+    background-color: $mainColorWhite
+    border: 1px solid #eaeaea
+    font-size: 20px
+    padding-left: 20px
+
+.checkout__line
+    width: 1140px
+    height: 1px
+    background-color: #e8e8e8
+
+.checkout__info
+    @extend .mainTextStyle
+    font-size: 16px
+    font-weight: 800
+    text-transform: uppercase
+    color: #222222
+    margin-top: 20px
+    margin-bottom: 20px
+
+.checkout__info::-webkit-details-marker
+    display: none
+
+.checkout__info
+    display: block
+
+.checkout__data
+    margin-top: 85px
+    margin-bottom: 93px
+
+.regInput_number
+    -moz-appearance: textfield
+
+.regInput_number::-webkit-outer-spin-button
+    -webkit-appearance: none
+
+.regInput_number::-webkit-inner-spin-button
+    -webkit-appearance: none
+
+.regCheck
+    font-family: $mainFont
+    font-size: 12px
+    line-height: 20px
+    font-weight: 600
+    color: #222222
+
+.regCheck input
+    margin-right: 14px
+
+.shipping__choice
+    width: 45%
+    display: flex
+    justify-content: space-between
